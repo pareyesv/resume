@@ -4,11 +4,11 @@ preamble:
     middle: Thomas
     last: Barnes
   address:
-    street: 3176 Porter Dr
-    city: Palo Alto, CA 94304
+    street: Space Science Division, U.S. Naval Research Laboratory
+    city: Washington, D.C.
     country: USA
   contact:
-    mail: barnes@baeri.org
+    mail: will.t.barnes@gmail.com
     webpage: "https://wtbarnes.github.io"
     twitter: wtbarnes_
     github: wtbarnes
@@ -18,7 +18,7 @@ preamble:
       id: "DSjKF4gAAAAJ&hl"
       name: Will Barnes
   current:
-    role: Postdoctoral Research Scientist
+    role: NRC Postdoctoral Research Associate
 sections:
 - title: Personal Information
   entries:
@@ -58,8 +58,8 @@ sections:
       - "Minors: Mathematics, Great Texts of the Western Tradition"
 - title: Experience
   entries:
-  - title: NRC Postdoctoral Fellow
-    institution: Naval Research Laboratory
+  - title: NRC Postdoctoral Research Associate
+    institution: U.S. Naval Research Laboratory
     location: Washington, D.C.
     dates:
       start:
@@ -120,29 +120,41 @@ sections:
   - title: NRC Research Associateship Postdoctoral Fellowship
     institution: Naval Research Laboratory, National Academies of Sciences
     location: Washington, D.C.
-    dates: "Jan. 2020--"
-    year: 2019
+    dates:
+      start:
+        month: 1
+        year: 2020
+      end: present
     advisor: ""
     description: Awarded 1-year NRC postdoctoral fellowship to study observational signatures of thermal non-equilibrium in coronal loops
   - title: NASA Postdoctoral Program Fellowship (declined)
     institution: NASA Goddard Space Flight Center, USRA
     location: Washington, D.C.
-    dates: ""
-    year: 2019
+    dates: ''
     advisor: ""
     description: Awarded competitive NPP Fellowship to study physics of coronal heating; declined in favor of NRC postdoctoral fellowship
   - title: NSF REU Research Fellowship
     institution: Baylor University, CASPER
     location: Waco, TX
-    dates: Jun. 2012--Aug. 2012
-    year: 2012
+    dates:
+      start:
+        month: 6
+        year: 2012
+      end:
+        month: 8
+        year: 2012
     advisor: Lorin Matthews, Ph.D.
     description: Received NSF REU fellowship to study dust grain charging and growth in protoplanetary disks.
   - title: Summer Undergraduate Research Fellowship
     institution: Baylor University, Dept. of Physics
     location: Waco, TX
-    dates: Jun. 2011--Aug. 2011
-    year: 2011
+    dates:
+      start:
+        month: 6
+        year: 2011
+      end:
+        month: 8
+        year: 2011
     advisor: Lorin Matthews, Ph.D.
     description: Awarded summer research funding to investigate plasma physics of charged dust grains in Saturn's F Ring.
 - title: Papers
@@ -167,7 +179,7 @@ sections:
       - Jack Ireland
       - Stuart Mumford
       - David Pérez-Suárez
-      - Daniel F.\ Ryan
+      - Daniel F. Ryan
       - Albert Y. Shih
       - et al.
       journal: ApJ (in press)
@@ -255,7 +267,6 @@ sections:
       event: Machine Learning in Heliophysics
       title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
       institution: "Centrum Wiskunde and Informatica"
-      year: 2019
       selected: true
     - dates:
         start:
@@ -270,7 +281,6 @@ sections:
       event: Coronal Loops Workshop IX
       title: "Constraining the Frequency of Energy Deposition through Quantitative Comparisons of Models and Observations (invited)"
       institution: University of St Andrews
-      year: 2019
       selected: true
     - dates:
         start: 
@@ -285,7 +295,6 @@ sections:
       event: Heliophysics Community Python Working Group Meeting
       title: "fiasco: a Python Interface to the CHIANTI Atomic Database"
       institution: Laboratory for Atmospheric and Space Physics
-      year: 2018
     - dates:
         start: 
           day: 29
@@ -330,12 +339,19 @@ sections:
       doi: 10.5281/zenodo.1249002
       institution: Center for Computational Astrophysics, The Flatiron Institute
       selected: true
-    - dates: 10--16 Jul. 2017
+    - dates:
+        start:
+          day: 10
+          month: 7
+          year: 2017
+        end:
+          day: 16
+          month: 7
+          year: 2017
       location: Austin, TX
       event: "16th Python in Science Conference"
       title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
       institution: SciPy, Enthought
-      year: 2017
     - dates:
         start: 
           day: 27
@@ -361,98 +377,185 @@ sections:
           year: 2016
       location: Boulder, CO
       institution: American Astronomical Society
-      event: 47th Annual Solar Physics Division Meeting
+      event: AAS Solar Physics Division Meeting
       title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
       bibcode: "2016SPD....4720203B"
       selected: true
-    - dates: 14 Sept. 2012
+    - dates:
+        day: 14
+        month: 9
+        year: 2012
       location: College Station, TX
       institution: Texas A&M University
       event: Texas Undergraduate Astronomy Research Symposium
       title: Dust Grain Charging in a Protoplanetary Disk
-      year: 2012
   - title: Seminars
     entries:
-    - dates: 26 Jun. 2019
+    - dates:
+        day: 26
+        month: 6
+        year: 2019
       location: Stanford, CA
       event: Stanford Solar Group Science Meeting
       title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
       institution: Stanford University
-    - dates: 20 Jun. 2019
+    - dates:
+        day: 20
+        month: 6 
+        year: 2019
       location: Palo Alto, CA
       event: Lockheed Martin Solar and Astrophysics Seminar
       title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
       institution: Lockheed Martin Solar and Astrophysics Laboratory
-    - dates: 19 Nov. 2018
+    - dates: 
+        day: 19 
+        month: 11 
+        year: 2018
       location: Houston, TX
       event: Space Physics Seminar Series
       institution: Rice University
       title: Understanding Heating Frequency in Active Region Loops through Forward Modeling and Machine Learning
-    - dates: 11 Jul. 2018
+    - dates:
+        day: 11 
+        month: 7 
+        year: 2018
       location: Washington, D.C.
       event: NRL Solar and Heliospheric Physics Branch Seminar
       institution: Naval Research Laboratory
       title: Investigating Heating Frequency in Active Region Cores through Timelag Analysis of Forward Modeled Emission (invited)
       selected: True
-    - dates: 27 Feb. 2017
+    - dates: 
+        day: 27
+        month: 2
+        year: 2017
       location: Houston, TX
       event: Space Physics Seminar Series
       institution: Rice University
       title: A Framework for Forward Modeling Solar Active Regions
-    - dates: 9 Nov. 2015
+    - dates:
+        day: 9 
+        month: 11
+        year: 2015
       location: Houston, TX
       institution: Rice University
       event: Space Physics Seminar Series
       title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
   - title: Outreach
     entries:
-    - dates: 24 Aug. 2018
+    - dates:
+        date: 24
+        month: 8 
+        year: 2018
       location: Conroe, TX 
       event: North Houston Astronomy Club Late Summer Gathering
       institution: Lone Star College-Montgomery Campus
       title: "Why is the Sun So Hot? A Current Perspective on Coronal Heating"
   - title: Posters
     entries:
-    - dates: 9--13 Dec. 2019
+    - dates: 
+        start:
+          day: 9
+          month: 12
+          year: 2019
+        end:
+          day: 13
+          month: 12
+          year: 2019
       location: San Francisco, CA
       event: American Geophysical Union Fall Meeting
       title: "The Sun at Scale: Interactive Analysis of High Resolution EUV Imaging Data on HPC Platforms with Dask"
       institution: American Geophysical Union
-    - dates: 30 Jul.--3 Aug. 2018
+    - dates: 
+        start:
+          day: 30 
+          month: 7
+          year: 2018
+        end:
+          day: 3
+          month: 8
+          year: 2018
       location: Cocoa Beach, FL
       event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
       title: "Using Synthetic and Observed Timelags to Constrain Nanoflare Heating Frequency in Active Region Cores"
       bibcode: "2018shin.confE..23B" 
       institution: National Science Foundation
-    - dates: 9--10 Oct. 2017
+    - dates: 
+        start:
+          day: 9
+          month: 10
+          year: 2017
+        end:
+          day: 10
+          month: 10
+          year: 2017
       location: Houston, TX
       event: Rice Data Science Conference
       title: "Timelag Analysis of Global Hydrodynamic Simulations of Active Regions in the Solar Corona"
       institution: Rice University
-    - dates: 24--28 Jul. 2017
+    - dates: 
+        start:
+          day: 24
+          month: 7
+          year: 2017
+        end:
+          day: 28 
+          month: 7
+          year: 2017
       location: Saint-Sauveur, Quebec, CA
       event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
       title: "Modeling Observable Signatures of Nanoflare Heating Frequency in Active Region Cores"
       institution: National Science Foundation
       bibcode: 2017shin.confE.159B
-    - dates: 11--15 Jul. 2016
+    - dates:
+        start:
+          day: 11
+          month: 7
+          year: 2016
+        end:
+          day: 15 
+          month: 7
+          year: 2016
       location: Santa Fe, NM
       institution: National Science Foundation
       event: Solar Heliospheric and Interplanetary Environment (SHINE) Workshop
       title: Understanding the Impact of Nanoflare Heating Frequency on the Observed Emission Measure Distribution
       bibcode: 2016shin.confE..69B
-    - dates: 21--23 Jul. 2015
+    - dates:
+        start:
+          day: 21
+          month: 7
+          year: 2015
+        end:
+          day: 23
+          month: 7
+          year: 2015
       location: Cambridge, UK
       institution: Unversity of Cambridge
       event: Coronal Loops Workshop VII
       title: Effects of Ion Heating on Emission Measure of Coronal Loops in Active Region Cores
-    - dates: 26--30 Apr. 2015
+    - dates:
+        start:
+          day: 26
+          month: 4
+          year: 2015
+        end:
+          day: 30
+          month: 4
+          year: 2015
       location: Indianapolis, IN
       institution: American Astronomical Society
       event: Triennial Earth-Sun Summit
       title: Nonnegative Matrix Factorization as a Method for Studying Coronal Heating
       bibcode: "2015TESS....120306B"
-    - dates: 18--22 Mar. 2013
+    - dates:
+        start:
+          day: 18
+          month: 3
+          year: 2013
+        end:
+          day: 22 
+          month: 3
+          year: 2013
       location: The Woodlands, TX
       institution: Lunar and Planetary Science Institute
       event: 44th Annual Lunar and Planetary Science Conference
@@ -465,14 +568,33 @@ sections:
   - role: Member of Scientific Organizing Committee
     event: Python in Astronomy Conference 2020
     description: Organize webpage, communicate meeting announcements to community, and assist in choosing program of speakers
-    dates: 20--24 Apr. 2020
+    dates:
+      start:
+        day: 20
+        month: 4
+        year: 2020
+      end:
+        day: 24 
+        month: 4
+        year: 2020
   - role: Discussion session co-organizer and co-chair (with S. Bradshaw and N. Viall)
     event: SHINE Workshop
-    dates: 30 Jul.--3 Aug. 2018
+    dates:
+      start:
+        day: 30 
+        month: 7
+        year: 2018
+      end:
+        day: 3
+        month: 8
+        year: 2018
     description: "Topic: Signatures of Time-dependent Heating in Active Regions and the Slow Solar Wind"
   - role: Student Representative 
     event: SPD/AAS Congressional Visit Day
-    dates: 25 May 2018
+    dates:
+      day: 25
+      month: 6 
+      year: 2018
     description: Visited senators and representatives to lobby for increase in NASA heliophysics budget
 - title: Software and Computing
   entries:
@@ -491,17 +613,23 @@ sections:
     - name: fiasco
       role: Maintainer
       repo: "wtbarnes/fiasco"
-      dates: "2017-present"
+      dates:
+        start: 2017
+        end: present
       description: fiasco provides a modern Python interface to the CHIANTI atomic database in addition to implementing many atomic physics calculations commonly used in solar physics. I am the creator and primary maintainer of fiasco.
     - name: SunPy
       role: Contributor
       repo: "sunpy/sunpy"
-      dates: "2016--present"
+      dates:
+        start: 2016
+        end: present
       description: SunPy is a library for solar data analysis in Python. I am an active member of the SunPy community and have made several contributions to the package. Specifically, I have worked to implement the widely-used AIA temperature response functions in SunPy.
     - name: ChiantiPy
       repo: "chianti-atomic/ChiantiPy"
       role: Contributor
-      dates: 2016--2017
+      dates:
+        start: 2016
+        end: 2017
       description: ChiantiPy is a Python interface to CHIANTI atomic database. My main contributions to ChiantiPy have been improving the documentation and packaging infrastructure and adding a test suite.
 - title: Students Mentored
   entries:
@@ -509,17 +637,35 @@ sections:
     role: Undergraduate
     institution: Rice University
     description: Assisted in advising undergraduate thesis work on force-free field extrapolations and forward modeling
-    dates:  Oct. 2017--Apr. 2018
+    dates:
+      start:
+        month: 10
+        year: 2017
+      end:
+        month: 4
+        year: 2018
   - name: Brandon Wang
     role: High school intern
     institution: Clements High School
     description: Advisor for STEM research course.
-    dates:  Apr. 2017--May 2018
+    dates:  
+      start:
+        month: 4
+        year: 2017
+      end:
+        month: 5
+        year: 2018
   - name: Tessa Wilkinson
     role: Undergraduate
     institution: Google Summer of Code
     description: Mentor for project to implement AIA response functions in SunPy 
-    dates: May 2016--Aug. 2016
+    dates:
+      start:
+        month: 5
+        year: 2016
+      end:
+        month: 8
+        year: 2016
 - title: Teaching Experience
   entries:
   - dates: Fall 2018
@@ -596,25 +742,49 @@ sections:
 - title: Other Employment Experience
   entries:
   - title: Office Assistant
-    dates: Jan. 2010--May 2013
+    dates:
+      start: 
+        month: 1
+        year: 2013
+      end:
+        month: 5
+        year: 2013
     org: Department of Physics, Baylor University
     location: Waco, TX
     description: Assisted with examinations and attendance for introductory astronomy class of approximately 300 students. Helped with departmental events and mailing as well as other miscellaneous duties.
 - title: Philanthropy
   entries:
   - title: National Honors Society
-    dates: Apr. 2009--May 2013
+    dates:
+      start:
+        month: 4
+        year: 2009
+      end:
+        month: 5
+        year: 2013
     org: Alpha Lambda Delta
     description: Completed 10 hours of service per semester.
   - title: National Service Fraternity, Zeta Omega chapter
-    dates: Sept. 2010--May 2013
+    dates:
+      start:
+        month: 9
+        year: 2010
+      end:
+        month: 6
+        year: 2013
     org: Alpha Phi Omega
     description: Completed 35 hours of service per semester
 - title: Leadership
   entries:
   - role: President
     org: Society of Physics Students, Baylor University chapter
-    dates: Aug. 2011--May 2012
+    dates:
+      start:
+        month: 8
+        year: 2011
+      end:
+        month: 5
+        year: 2012
     description:
     - Initiated rechartering of university chapter
     - Scheduled and presided over meetings
@@ -622,9 +792,14 @@ sections:
     - Oversaw design and printing of t-shirts.
   - role: Treasurer
     org: Alpha Phi Omega, Zeta Omega chapter
-    dates: Aug. 2011--May 2012
+    dates:
+      start:
+        month: 8
+        year: 2011
+      end:
+        month: 5
+        year: 2012
     description:
     - Managed chapter finances
     - Collected membership dues
     - Organized fundraiser
-
