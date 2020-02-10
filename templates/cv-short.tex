@@ -115,7 +115,7 @@
   {(((i.title | escape_tex)))}
   {(((i.institution | escape_tex)))}
   {(((i.location | escape_tex)))}
-  {(((i.dates.start | date_filter("numerical_short_year",True) )))--(((i.dates.end | date_filter("numerical_short_year",True) )))}
+  {(((i.dates | date_range_filter("numerical_short_year",True) )))}
 ((* endfor *))
 \end{cvhonors}
 
@@ -161,7 +161,7 @@ A current publication list is also available from
   {((( j.event | escape_tex )))}
   {((( j.title | escape_tex | doi_to_url(j.doi, j.bibcode, "tex"))))}
   {((( j.location | escape_tex )))}
-  {((( j.dates.start | date_filter("numerical_short_year",True) )))}
+  {((( j.dates.start.month )))/((( j.dates.start.year )))}
 ((* endif *))
 ((* endfor *))
 \end{cvhonors}
@@ -177,7 +177,7 @@ A current publication list is also available from
   {((( i.name )))}
   {((( i.awarder )))}
   {}
-  {((( i.dates | date_filter("numerical",False) )))}
+  {((( i.dates | date_range_filter("numerical",False) )))}
 ((* endfor *))
 \end{cvhonors}
 

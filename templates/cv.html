@@ -5,7 +5,7 @@
 <h2>{{ sect.title }}</h2>
 <ul>
 {% for i in sect.entries %}
-<li class="list-unstyled lead"><strong>{{ i.school }}</strong> {{ i.location }}<span class="pull-right">{{i.degree}}, <em>{{i.dates}}</em></span></li>
+<li class="list-unstyled lead"><strong>{{ i.school }}</strong> {{ i.location }}<span class="pull-right">{{i.degree}}, <em>{{ i.dates | date_range_filter }}</em></span></li>
 {% endfor %}
 </ul>
 <!-------------------------------------------------------------------------------------------->
@@ -40,7 +40,7 @@
 <h3>{{ i.title }}</h3>
 <ul>
 {% for j in i.entries %}
-<li class="lead"><em>{{ j.title }}</em> <span class="pull-right">{{ j.event }}</span><br>{{ j.dates }}, {{ j.location }}</li>
+<li class="lead"><em>{{ j.title }}</em> <span class="pull-right">{{ j.event }}</span><br>{{ j.dates | date_range_filter }}, {{ j.location }}</li>
 {% endfor %}
 </ul>
 {% endfor %}

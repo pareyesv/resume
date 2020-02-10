@@ -1,7 +1,6 @@
 import os
 import sys
 import argparse
-import logging
 
 import yaml
 import jinja2
@@ -99,7 +98,8 @@ if __name__ == '__main__':
                filters.to_cvlist,
                filters.author_filter,
                filters.doi_to_url,
-               filters.date_filter]
+               filters.date_filter,
+               filters.date_range_filter]
     cv = BuildCV(args.cv_data, filters=filters)
     if args.tex_out_file is not None:
         with open(args.tex_out_file, 'w') as f:

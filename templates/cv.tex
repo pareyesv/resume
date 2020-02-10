@@ -104,7 +104,7 @@
   {(((i.degree | escape_tex )))}
   {(((i.school | escape_tex )))}
   {(((i.location | escape_tex )))}
-  {((( i.dates.start | escape_tex ))) -- ((( i.dates.end | escape_tex )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
   {((* if i.entries *))
     \begin{cvitems}
     ((* for j in i.entries -*))
@@ -126,7 +126,7 @@
   {(((i.institution | escape_tex)))}
   {(((i.title | escape_tex)))}
   {(((i.location | escape_tex)))}
-  {(((i.dates | escape_tex)))}
+  {((( i.dates | date_range_filter | escape_tex )))}
   {(((i.description | escape_tex)))}
 ((* endfor *))
 \end{cventries}
@@ -171,7 +171,7 @@ A current publication list is also available from
   {((( i.institution | escape_tex )))}
   {((( i.title | escape_tex )))}
   {((( i.location )))}
-  {((( i.dates )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
   {((( i.description | escape_tex )))}
 ((* endfor *))
 \end{cventries}
@@ -190,7 +190,7 @@ A current publication list is also available from
   {((( i.role )))}
   {((( i.event )))}
   {}
-  {((( i.dates )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
   {((( i.description )))}
 ((* endfor *))
 \end{cventries}
@@ -208,7 +208,7 @@ A current publication list is also available from
   {((( j.institution | escape_tex )))}
   {((( j.event | escape_tex )))}
   {((( j.location | escape_tex )))}
-  {((( j.dates | escape_tex )))}
+  {((( j.dates | date_range_filter | escape_tex )))}
   {((( j.title | escape_tex | doi_to_url(j.doi, j.bibcode, "tex"))))}
 ((* endfor *))
 \end{cventries}
@@ -225,7 +225,7 @@ A current publication list is also available from
   {((( i.name )))}
   {((( i.awarder )))}
   {}
-  {((( i.dates )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
 ((* endfor *))
 \end{cvhonors}
 
@@ -254,7 +254,7 @@ A more complete record of my contributions is available on
 \cventry
   {((( i.role | escape_tex )))}
   {((( i.name | escape_tex )))}
-  {((( i.dates | escape_tex )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
   {\href{https://github.com/((( i.repo )))}{github.com/((( i.repo )))}}
   {((( i.description )))}
 ((* endfor *))
@@ -273,7 +273,7 @@ A more complete record of my contributions is available on
   {((( i.role | escape_tex )))}
   {((( i.name | escape_tex )))}
   {((( i.institution | escape_tex )))}
-  {((( i.dates | escape_tex )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
   {((( i.description | escape_tex )))}
 ((* endfor *))
 \end{cventries}
@@ -286,7 +286,7 @@ A more complete record of my contributions is available on
   {((( i.title | escape_tex )))}
   {((( i.class | escape_tex )))}
   {((( i.institution | escape_tex )))}
-  {((( i.dates | escape_tex )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
   {((( i.description | escape_tex )))}
 ((* endfor *))
 \end{cventries}

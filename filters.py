@@ -146,20 +146,39 @@ def doi_to_url(value, doi, bibcode, link_format='html'):
 def date_filter(date, format='full', drop_present=False):
     if date == 'present':
         return 'present' if not drop_present else ''
-    # Sometimes we want just lists of years
-    if type(date) is str:
+    # Sometimes we just want to return a string (or int)
+    if type(date) is not dict:
         return date
-    # Otherwise, format correctly
-    month = date['month']
-    year = date['year']
-    if format == 'full':
-        return f'{calendar.month_name[month]} {year}'
-    elif format == 'abbreviated':
-        return f'{calendar.month_abbr[month]} {year}'
-    elif format == 'numerical':
-        return f'{month}/{year}'
-    elif format == 'numerical_short_year':
-        return f'{month}/{str(year)[2:]}'
+    day = date.get('day', None)
+    month = date.get('month', None)
+    year = date.get('year', None)
+    # Format month and year appropriately
+    if format == 'full' and month is not None:
+        month = f'{calendar.month_name[month]}'
+    elif format == 'abbreviated' and month is not None:
+        month = f'{calendar.month_abbr[month]}'
+    if format == 'numerical_short_year' and year is not None:
+        year = f'{str(year)[2:]}'
+    if format == 'full' or format == 'abbreviated':
+        return ' '.join([f'{i}' for i in (day, month, year) if i is not None])
+    elif format == 'numerical' or format == 'numerical_short_year':
+        return '/'.join([f'{i}' for i in (day, month, year) if i is not None])
     else:
         raise ValueError('Invalid format')
 
+
+def date_range_filter(dates, format='full', drop_present=False):
+    if type(dates) is not dict or ('start' not in dates and 'end' not in dates):
+        return date_filter(dates, format=format, drop_present=drop_present)
+    else:
+        start = dates['start']
+        end = dates['end']
+        # Remove redundant entries if possible
+        if type(start) is dict and type(end) is dict:
+            if start['year'] == end['year']:
+                del start['year']
+                if start['month'] == end['month']:
+                    del start['month']
+        start = date_filter(start, format=format, drop_present=drop_present)
+        end = date_filter(end, format=format, drop_present=drop_present)
+        return f'{start} -- {end}'

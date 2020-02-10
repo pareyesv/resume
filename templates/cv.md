@@ -5,7 +5,7 @@
 ## {{ sect.title }}
 <div class="lead">
 {% for i in sect.entries %}
-* **{{ i.degree }}**, {{ i.dates }} / {{i.school}} / {{i.location}}
+* **{{ i.degree }}**, {{ i.dates | date_range_filter }} / {{i.school}} / {{i.location}}
 {% endfor %}
 </div>
 <!-------------------------------------------------------------------------------------------->
@@ -39,7 +39,7 @@
 ## {{ i.title }}
 <div class="lead">
 {% for j in i.entries %}
-* *{{ j.title }}* / {{ j.event }} / {{ j.dates }} / {{ j.location }}
+* *{{ j.title }}* / {{ j.event }} / {{ j.dates | date_range_filter}} / {{ j.location }}
 {% endfor %}
 </div>
 {% endfor %}
