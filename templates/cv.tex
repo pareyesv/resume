@@ -225,7 +225,7 @@ A current publication list is also available from
   {((( i.name )))}
   {((( i.awarder )))}
   {}
-  {((( i.dates | date_range_filter | escape_tex )))}
+  {((( i.dates | date_range_filter("abbreviated") | escape_tex )))}
 ((* endfor *))
 \end{cvhonors}
 
