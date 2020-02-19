@@ -167,7 +167,23 @@ sections:
       - S. J. Bradshaw
       - N. M. Viall
       journal: in prep
-      year: 2019
+      year: 2020
+    - title: "SunPy: A Python Package for Solar Physics"
+      journal: JOSS
+      year: 2020
+      doi: "10.21105/joss.01832"
+      authors:
+      - Stuart J. Mumford
+      - Nabil Freij
+      - Steven Christe
+      - Jack Ireland
+      - Florian Mayer
+      - V. Keith Hughitt
+      - Albert Y. Shih
+      - Daniel F. Ryan
+      - Simon Liedtke
+      - David Pérez-Suárez
+      - et al. (including Will Barnes)
     - title: "The SunPy Project: Open Source Development and Status of the Version 1.0 Core Package"
       authors:
       - The SunPy Community
@@ -182,8 +198,9 @@ sections:
       - Daniel F. Ryan
       - Albert Y. Shih
       - et al.
-      journal: ApJ (in press)
-      year: 2019
+      journal: ApJ
+      doi: "10.3847/1538-4357/ab4f7a"
+      year: 2020
     - title: Solar Active Region Heating Diagnostics from High Temperature Emission using the Marshall Grazing Incidence X-ray Spectrometer (MaGIXS)
       authors:
       - P. S. Athiray
