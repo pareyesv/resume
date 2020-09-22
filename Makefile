@@ -7,7 +7,7 @@ else
 LINK=
 endif
 
-all: html md pdf
+all: html md pdf pdf_short
 
 outdir:
 	mkdir -p $(OUTDIR)
