@@ -5,6 +5,7 @@ See http://flask.pocoo.org/snippets/55/ for more info.
 import re
 import logging
 import calendar
+from urllib.parse import urlparse
 
 
 LATEX_SUBS = (
@@ -138,7 +139,7 @@ def doi_to_url(value, doi, bibcode, link_format='html'):
     elif link_format == 'markdown':
         return f'[{value}]({link})'
     elif link_format == 'tex':
-        return f'\href{{{link}}}{{{value}}}'
+        return f'\\href{{{link}}}{{{value}}}'
     else:
         raise NotImplementedError(f'{link_format} links not implemented')
 
@@ -182,3 +183,15 @@ def date_range_filter(dates, format='full', drop_present=False):
         start = date_filter(start, format=format, drop_present=drop_present)
         end = date_filter(end, format=format, drop_present=drop_present)
         return f'{start} -- {end}'
+
+
+def latex_repo_icon_filter(repo_url):
+    repo = urlparse(repo_url)
+    if 'github' in repo.netloc:
+        icon = 'faGithubSquare'
+    elif 'gitlab' in repo.netloc:
+        icon = 'faGitlab'
+    else:
+        raise ValueError(f'Unrecognized repo type {repo.netloc}')
+    # Strip the leading / in the repo name
+    return f'\\href{{{repo_url}}}{{\\{icon}\\acvHeaderIconSep {repo.path[1:]}}}'

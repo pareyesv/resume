@@ -88,18 +88,21 @@ if __name__ == '__main__':
     parser.add_argument("--pdf_link", help="where to link to PDF version of CV")
     args = parser.parse_args()
     # build cv
-    filters = [filters.escape_tex,
-               filters.tex_section_sorter,
-               filters.tex_pub_sorter,
-               filters.md_section_sorter,
-               filters.html_section_sorter,
-               filters.shorten_list,
-               filters.select_by_attr_name,
-               filters.to_cvlist,
-               filters.author_filter,
-               filters.doi_to_url,
-               filters.date_filter,
-               filters.date_range_filter]
+    filters = [
+        filters.escape_tex,
+        filters.tex_section_sorter,
+        filters.tex_pub_sorter,
+        filters.md_section_sorter,
+        filters.html_section_sorter,
+        filters.shorten_list,
+        filters.select_by_attr_name,
+        filters.to_cvlist,
+        filters.author_filter,
+        filters.doi_to_url,
+        filters.date_filter,
+        filters.date_range_filter,
+        filters.latex_repo_icon_filter,
+    ]
     cv = BuildCV(args.cv_data, filters=filters)
     if args.tex_out_file is not None:
         with open(args.tex_out_file, 'w') as f:
