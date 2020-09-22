@@ -132,6 +132,22 @@
 \end{cventries}
 
 %-------------------------------------------------------------------------------%
+%	                                Fellowships                                   %
+%-------------------------------------------------------------------------------%
+((* set sect = data.sections | select_by_attr_name("title", "Research Fellowships Awarded") *))
+\cvsection{((( sect.title | escape_tex )))}
+\begin{cventries}
+((* for i in sect.entries *))
+\cventry
+  {((( i.institution | escape_tex )))}
+  {((( i.title | escape_tex )))}
+  {((( i.location )))}
+  {((( i.dates | date_range_filter | escape_tex )))}
+  {((( i.description | escape_tex )))}
+((* endfor *))
+\end{cventries}
+
+%-------------------------------------------------------------------------------%
 %	                                Publications                                  %
 %-------------------------------------------------------------------------------%
 ((* set  sect = data.sections | select_by_attr_name("title", "Papers") *))
@@ -159,22 +175,6 @@ A current publication list is also available from
   ((* endfor *))
 \end{cvhonors}
 ((* endfor *))
-
-%-------------------------------------------------------------------------------%
-%	                                Fellowships                                   %
-%-------------------------------------------------------------------------------%
-((* set sect = data.sections | select_by_attr_name("title", "Research Fellowships Awarded") *))
-\cvsection{((( sect.title | escape_tex )))}
-\begin{cventries}
-((* for i in sect.entries *))
-\cventry
-  {((( i.institution | escape_tex )))}
-  {((( i.title | escape_tex )))}
-  {((( i.location )))}
-  {((( i.dates | date_range_filter | escape_tex )))}
-  {((( i.description | escape_tex )))}
-((* endfor *))
-\end{cventries}
 
 %-------------------------------------------------------------------------------%
 %	                                Service                                       %
@@ -248,14 +248,14 @@ A current publication list is also available from
 
 A more complete record of my contributions is available on 
 \href{https://github.com/((( data.preamble.contact.github )))}
-     {GitHub}.
+     {GitHub} and \href{https://gitlab.com/((( data.preamble.contact.gitlab )))}{GitLab}.
 \begin{cventries}
 ((* for i in sect2.entries *))
 \cventry
   {((( i.role | escape_tex )))}
   {((( i.name | escape_tex )))}
   {((( i.dates | date_range_filter | escape_tex )))}
-  {\href{https://github.com/((( i.repo )))}{github.com/((( i.repo )))}}
+  {((( i.repo | escape_tex | latex_repo_icon_filter )))}
   {((( i.description )))}
 ((* endfor *))
 \end{cventries}

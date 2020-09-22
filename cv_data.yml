@@ -67,7 +67,7 @@ sections:
         year: 2020
       end: present
     advisor: Harry Warren
-    description: ""
+    description: "Investigating observable signatures of impulsive heating and thermal non-equilibrium in EUV and X-ray observations of the solar corona"
   - title: Visiting Postdoctoral Scholar
     institution: W. W. Hansen Experimental Physics Laboratory, Stanford University
     location: Stanford, CA
@@ -79,7 +79,7 @@ sections:
         month: 12
         year: 2019
     advisor: ""
-    description: "Exploring applications of HPC/cloud computing to analysis of HMI data"
+    description: "Explored applications of HPC/cloud computing to analysis of HMI data"
   - title: Postdoctoral Research Scientist
     institution: Lockheed Martin Solar and Astrophysics Laboratory, Bay Area Environmental Research Institute
     location: Palo Alto, CA
@@ -91,7 +91,7 @@ sections:
         month: 12
         year: 2019
     advisor: "Dr. Mark Cheung"
-    description: "Developing workflows for analyzing AIA imaging data using HPC/cloud infrastructure in collaboration with Stanford U. and NASA Ames"
+    description: "Developed workflows for analyzing AIA imaging data using HPC/cloud infrastructure in collaboration with Stanford U. and NASA Ames"
   - title: Research Computing Intern
     dates:
       start:
@@ -168,6 +168,15 @@ sections:
       - N. M. Viall
       journal: in prep
       year: 2020
+    - title: "Nanoflare Diagnostics from Magnetohydrodynamic Heating Profiles"
+      journal: ApJ
+      year: 2020
+      doi: "10.3847/1538-4357/aba959"
+      authors:
+      - K. J. Knizhnik
+      - W. T. Barnes
+      - J. W. Reep
+      - V. M. Uritsky
     - title: "SunPy: A Python Package for Solar Physics"
       journal: JOSS
       year: 2020
@@ -259,6 +268,45 @@ sections:
       bibcode: "2013LPI....44.1897B"
   - title: Other Non-refereed Publications
     entries:
+    - title: "The Ongoing Development and Support of Atomic Physics in Solar and Heliospheric Science"
+      authors:
+      - Y. J. Rivera
+      - W. T. Barnes
+      - A. Higginson
+      - E. Landi
+      - J. C. Raymond
+      - J. W. Reep
+      year: 2020
+      journal: "Heliophysics 2050 White Paper"
+      doi: "10.5281/zenodo.4033424"
+    - title: "Science Platforms for Heliophysics Data Analysis"
+      authors:
+      - M. G. Bobra
+      - W. T. Barnes
+      - M. C. M. Cheung
+      - L. A. Hayes
+      - J. Ireland
+      - M. Janvier
+      - M. S. F. Kirk
+      - J. P. Mason
+      - S. J. Mumford
+      - P. J. Wright
+      year: 2020
+      journal: "Heliophysics 2050 White Paper"
+      doi: "10.5281/zenodo.4025217"
+    - title: "Toward A Sustainable Software Development Model for Heliophysics"
+      authors:
+      - W. T. Barnes
+      - J. Juno
+      - J. W. Reep
+      - J. Ireland
+      - P. J. Wright
+      - S. A. Spitzer
+      - B. L. Alterman
+      - D. Stansby
+      - E. Lichko
+      year: 2020
+      journal: "Heliophysics 2050 White Paper"
     - title: "Modeling Coronal Loops in 3D with sunpy.coordinates"
       authors:
       - W. T. Barnes
@@ -285,6 +333,7 @@ sections:
       title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
       institution: "Centrum Wiskunde and Informatica"
       selected: true
+      doi: "10.5281/zenodo.3441886"
     - dates:
         start:
           day: 11
@@ -299,19 +348,7 @@ sections:
       title: "Constraining the Frequency of Energy Deposition through Quantitative Comparisons of Models and Observations (invited)"
       institution: University of St Andrews
       selected: true
-    - dates:
-        start: 
-          day: 13
-          month: 11
-          year: 2018
-        end:
-          day: 15
-          month: 11
-          year: 2018
-      location: Boulder, CO
-      event: Heliophysics Community Python Working Group Meeting
-      title: "fiasco: a Python Interface to the CHIANTI Atomic Database"
-      institution: Laboratory for Atmospheric and Space Physics
+      doi: "10.5281/zenodo.3441895"
     - dates:
         start: 
           day: 29
@@ -325,7 +362,7 @@ sections:
       event: 2018 SDO Science Workshop
       title: "Understanding Heating Properties of Active Region Loops through Forward Modeling and Machine Learning"
       institution: Royal Observatory Belgium, Solar-Terrestrial Centre of Excellence
-      bibcode: "2018csc..confE..72B"
+      doi: "10.5281/zenodo.3442496"
       selected: true
     - dates:
         start:
@@ -341,6 +378,7 @@ sections:
       title: "Timelag Analysis of Simulated Active Region Cores Heated by Nanoflares"
       institution: American Geophysical Union
       selected: true
+      doi: "10.5281/zenodo.4033815"
     - dates:
         start:
           day: 30
@@ -369,6 +407,7 @@ sections:
       event: "16th Python in Science Conference"
       title: "ChiantiPy: a Python package for Astrophysical Spectroscopy"
       institution: SciPy, Enthought
+      doi: "10.5281/zenodo.4033872"
     - dates:
         start: 
           day: 27
@@ -383,6 +422,7 @@ sections:
       title: Constraining Nanoflare Heating Frequency with a Global Active Region Model
       institution: INAF IASF Palermo
       selected: true
+      doi: "10.5281/zenodo.4033848"
     - dates:
         start:
           day: 31
@@ -396,7 +436,7 @@ sections:
       institution: American Astronomical Society
       event: AAS Solar Physics Division Meeting
       title: Hot Non-flaring Plasmas in Active Region Cores Heated by Single Nanoflares
-      bibcode: "2016SPD....4720203B"
+      doi: "10.5281/zenodo.4033892"
       selected: true
     - dates:
         day: 14
@@ -416,6 +456,7 @@ sections:
       event: Stanford Solar Group Science Meeting
       title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
       institution: Stanford University
+      doi: "10.5281/zenodo.4042479"
     - dates:
         day: 20
         month: 6 
@@ -424,6 +465,7 @@ sections:
       event: Lockheed Martin Solar and Astrophysics Seminar
       title: "Seeing the Trees through a Random Forest: Details of Active Region Heating Revealed through Forward Modeling and Classification"
       institution: Lockheed Martin Solar and Astrophysics Laboratory
+      doi: "10.5281/zenodo.4042497"
     - dates: 
         day: 19 
         month: 11 
@@ -432,6 +474,7 @@ sections:
       event: Space Physics Seminar Series
       institution: Rice University
       title: Understanding Heating Frequency in Active Region Loops through Forward Modeling and Machine Learning
+      doi: "10.5281/zenodo.4042576"
     - dates:
         day: 11 
         month: 7 
@@ -441,6 +484,7 @@ sections:
       institution: Naval Research Laboratory
       title: Investigating Heating Frequency in Active Region Cores through Timelag Analysis of Forward Modeled Emission (invited)
       selected: True
+      doi: "10.5281/zenodo.4042729"
     - dates: 
         day: 27
         month: 2
@@ -457,6 +501,36 @@ sections:
       institution: Rice University
       event: Space Physics Seminar Series
       title: Impacts of Two-fluid Effects on Emission from Impulsively Heated Coronal Loops
+      doi: "10.5281/zenodo.4042763"
+  - title: Workshops
+    entries:
+    - dates:
+        start:
+          day: 27
+          month: 1
+          year: 2020
+        end:
+          day: 31
+          month: 1
+          year: 2020
+      location: Bern, Switzerland
+      event: "Interrogating Field-Aligned Solar Flare Models (ISSI Team Led by G. Kerr and V. Polito)"
+      title: "Collaborative Development of Python Tools for Field-Aligned Hydrodynamic Simulations"
+      institution: International Space Science Institute
+    - dates:
+        start: 
+          day: 13
+          month: 11
+          year: 2018
+        end:
+          day: 15
+          month: 11
+          year: 2018
+      location: Boulder, CO
+      event: Heliophysics Community Python Working Group Meeting
+      title: "fiasco: a Python Interface to the CHIANTI Atomic Database"
+      institution: Laboratory for Atmospheric and Space Physics
+      doi: "10.5281/zenodo.3442128"
   - title: Outreach
     entries:
     - dates:
@@ -467,6 +541,7 @@ sections:
       event: North Houston Astronomy Club Late Summer Gathering
       institution: Lone Star College-Montgomery Campus
       title: "Why is the Sun So Hot? A Current Perspective on Coronal Heating"
+      doi: "10.5281/zenodo.4042814"
   - title: Posters
     entries:
     - dates: 
@@ -482,6 +557,7 @@ sections:
       event: American Geophysical Union Fall Meeting
       title: "The Sun at Scale: Interactive Analysis of High Resolution EUV Imaging Data on HPC Platforms with Dask"
       institution: American Geophysical Union
+      bibcode: "2019AGUFMSH41C3317B"
     - dates: 
         start:
           day: 30 
@@ -627,27 +703,27 @@ sections:
       value: continuous integration, documentation, testing, version control
   - title: Open Source Contributions
     entries:
+    - name: aiapy
+      role: Maintainer
+      repo: "https://gitlab.com/LMSAL_HUB/aia_hub/aiapy"
+      dates:
+        start: 2019
+        end: present
+      description: "aiapy provides basic analysis and calibration routines for processing data from the Atmospheric Imaging Assembly. I am the primary developer of aiapy in collaboration with others at LMSAL."
     - name: fiasco
       role: Maintainer
-      repo: "wtbarnes/fiasco"
+      repo: "https://github.com/wtbarnes/fiasco"
       dates:
         start: 2017
         end: present
       description: fiasco provides a modern Python interface to the CHIANTI atomic database in addition to implementing many atomic physics calculations commonly used in solar physics. I am the creator and primary maintainer of fiasco.
     - name: SunPy
       role: Contributor
-      repo: "sunpy/sunpy"
+      repo: "https://github.com/sunpy/sunpy"
       dates:
         start: 2016
         end: present
-      description: SunPy is a library for solar data analysis in Python. I am an active member of the SunPy community and have made several contributions to the package. Specifically, I have worked to implement the widely-used AIA temperature response functions in SunPy.
-    - name: ChiantiPy
-      repo: "chianti-atomic/ChiantiPy"
-      role: Contributor
-      dates:
-        start: 2016
-        end: 2017
-      description: ChiantiPy is a Python interface to CHIANTI atomic database. My main contributions to ChiantiPy have been improving the documentation and packaging infrastructure and adding a test suite.
+      description: SunPy is a library for solar data analysis in Python. I am an active member of the SunPy community and have made several contributions to the package. As of December 2019, I am the deputy lead developer for the package and a maintainer for the `image` and `instr` subpackages.
 - title: Students Mentored
   entries:
   - name: Lily Han
