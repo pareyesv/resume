@@ -168,6 +168,23 @@ sections:
       - N. M. Viall
       journal: in prep
       year: 2020
+    - title: "aiapy: A Python Package for Analyzing Solar EUV Image Data from AIA"
+      journal: JOSS
+      year: 2020
+      doi: "10.21105/joss.02801"
+      authors:
+      - Will T. Barnes
+      - Mark C. M. Cheung
+      - Monica G. Bobra
+      - Paul F. Boerner
+      - Georgios Chintzoglou
+      - Drew Leonard
+      - Stuart J. Mumford
+      - Nicholas Padmanabhan
+      - Albert Y. Shih
+      - Nina Shirman
+      - David Stansby
+      - Paul J. Wright
     - title: "Nanoflare Diagnostics from Magnetohydrodynamic Heating Profiles"
       journal: ApJ
       year: 2020
@@ -696,7 +713,7 @@ sections:
     - name: Languages
       value: Bash, C, C++, IDL, Mathematica, MATLAB, Python
     - name: Scientific Computing
-      value: numerical methods, high performance computing (e.g. SLURM, PBS), parallel/distributed data processing
+      value: numerical methods, high performance computing, parallel/distributed data processing
     - name: Markup
       value:  CSS, HTML, LaTeX, markdown, reStructuredText
     - name: DevOps
