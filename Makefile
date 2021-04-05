@@ -7,6 +7,20 @@ else
 LINK=
 endif
 
+ENV_NAME = resume
+
+ifeq (,$(shell which conda))
+HAS_CONDA=False
+else
+HAS_CONDA=True
+CONDA := $(shell pyenv which conda || which conda)
+ifeq ($(CONDA_DEFAULT_ENV),$(ENV_NAME))
+ENV_IS_ACTIVE=True
+else
+ENV_IS_ACTIVE=False
+endif
+endif
+
 all: html md pdf pdf_short
 
 outdir:
@@ -37,3 +51,23 @@ pdf_short: install_tex tex_short
 
 clean:
 	rm -r $(OUTDIR)
+
+## create conda environment
+conda-create-env:
+ifeq (True,$(HAS_CONDA))
+	@printf ">>> Creating '$(ENV_NAME)' conda environment. This could take a few minutes ...\n\n"
+	@$(CONDA) env create --name $(ENV_NAME) --file environment.yml
+	@printf ">>> Adding the project to the environment...\n\n"
+else
+	@printf ">>> conda command not found. Check out that conda has been installed properly."
+endif
+
+## update conda environment
+conda-update-env:
+ifeq (True,$(HAS_CONDA))
+	@printf ">>> Updating '$(ENV_NAME)' conda environment. This could take a few minutes ...\n\n"
+	@$(CONDA) env update --name $(ENV_NAME) --file environment.yml --prune
+	@printf ">>> Updated.\n\n"
+else
+	@printf ">>> conda command not found. Check out that conda has been installed properly."
+endif
