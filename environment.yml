@@ -1,0 +1,17 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - black
+  - configparser
+  - flake8
+  - isort
+  - mypy
+  - pre-commit
+  - python=3.9
+  - jinja2
+  - nested-lookup
+# jupyter lab/notebook tools
+  - ipykernel
+  - nb_black
+  - watermark
