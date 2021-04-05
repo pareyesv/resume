@@ -1,0 +1,254 @@
+---
+references:
+- id: donadio2021
+  abstract: >-
+    The availability of reliable socioeconomic data is critical for the design
+    of urban policies and the implementation of location-based services;
+    however, often, their temporal and geographical coverage remain scarce. We
+    explore the potential for insurance customers data to predict socioeconomic
+    indicators of Swiss municipalities. First, we define a features space by
+    aggregating at city-level individual customer data along several behavioral
+    and user profile dimensions. Second, we collect official statistics shared
+    by the Swiss authorities on a wide spectrum of categories: Population,
+    Transportation, Work, Space and Territory, Housing, and Economy. Third, we
+    adopt two spatial regression models exploring both global and local
+    geographical dependencies to investigate their predictability. Results show
+    consistently a correlation between insurance customer characteristics and
+    official socioeconomic indexes. Performance fluctuates depending on the
+    category, with values of R2 > 0.6 for several target variables using a
+    5-fold cross validation. As a case study, we focus on predicting the
+    percentage of the population using public transportation and we discuss the
+    implications on a regional scope. We believe that this methodology can
+    support official statistical offices and it could open up new opportunities
+    for the characterization of socioeconomic traits at highly-granular spatial
+    and temporal scales.
+  accessed:
+    - year: 2021
+      month: 3
+      day: 4
+  author:
+    - family: Donadio
+      given: Lorenzo
+    - family: Schifanella
+      given: Rossano
+    - family: Binder
+      given: Claudia R.
+    - family: Massaro
+      given: Emanuele
+  container-title: PLOS ONE
+  container-title-short: PLOS ONE
+  DOI: 10.1371/journal.pone.0246785
+  ISSN: 1932-6203
+  issue: '3'
+  issued:
+    - year: 2021
+      month: 3
+      day: 3
+  language: en
+  note: 'ZSCC: NoCitationData[s0]'
+  page: e0246785
+  publisher: Public Library of Science
+  source: PLoS Journals
+  title: >-
+    Leveraging insurance customer data to characterize socioeconomic indicators
+    of Swiss municipalities
+  type: article-journal
+  URL: 10.1371/journal.pone.0246785
+  volume: '16'
+
+- id: graells-garrido2020
+  abstract: >-
+    Urban population grows constantly. By 2050 two thirds of the world
+    population will reside in urban areas. This growth is faster and more
+    complex than the ability of cities to measure and plan for their
+    sustainability. To understand what makes a city inclusive for all, we define
+    a methodology to identify and characterize spatial subdivisions: areas with
+    over- and under-representation of specific population groups, named hot and
+    cold spots respectively. Using aggregated mobile phone data, we apply this
+    methodology to the city of Barcelona to assess the mobility of three groups
+    of people: women, elders, and tourists. We find that, within the three
+    groups, cold spots have a lower diversity of amenities and services than hot
+    spots. Also, cold spots of women and tourists tend to have lower population
+    income. These insights apply to the floating population of Barcelona, thus
+    augmenting the scope of how inclusiveness can be analyzed in the city.
+  accessed:
+    - year: 2021
+      month: 2
+      day: 17
+  author:
+    - family: Graells-Garrido
+      given: Eduardo
+    - family: Meta
+      given: Irene
+    - family: Serra-Burriel
+      given: Feliu
+    - family: Reyes
+      given: Patricio
+    - family: Cucchietti
+      given: Fernando M.
+  container-title: arXiv:2002.11636 [cs]
+  issued:
+    - year: 2020
+      month: 2
+      day: 20
+  note: 'ZSCC: NoCitationData[s0]'
+  source: arXiv.org
+  title: Measuring Spatial Subdivisions in Urban Mobility with Mobile Phone Data
+  type: article-journal
+  URL: http://arxiv.org/abs/2002.11636
+
+- id: hwang2017
+  abstract: >-
+    When the spatial information of each location is given specifically as
+    coordinates it is popular to use the geographically weighted regression to
+    incorporate the spatial information by assuming that the regression
+    parameters vary spatially across locations. In this paper, we relax the
+    linearity assumption of geographically weighted regression and propose a
+    geographically weighted least squares-support vector machine for estimating
+    geographically weighted mean by using the basic concept of kernel machines.
+    Generalized cross validation function is induced for the model selection.
+    Numerical studies with real datasets have been conducted to compare the
+    performance of proposed method with other methods for predicting
+    geographically weighted mean.
+  accessed:
+    - year: 2021
+      month: 3
+      day: 13
+  author:
+    - family: Hwang
+      given: Changha
+    - family: Shim
+      given: Jooyong
+  container-title: Journal of the Korean Data and Information Science Society
+  DOI: 10.7465/jkdi.2017.28.1.227
+  ISSN: 1598-9402
+  issue: '1'
+  issued:
+    - year: 2017
+  language: eng
+  note: 'ZSCC: 0000005'
+  page: 227-235
+  publisher: The Korean Data and Information Science Society
+  source: koreascience.or.kr
+  title: Geographically weighted least squares-support vector machine
+  type: article-journal
+  URL: http://koreascience.or.kr/article/JAKO201711656576832.page
+  volume: '28'
+
+- id: park2016
+  author:
+    - family: Park
+      given: Souneil
+    - family: Bourqui
+      given: Marc
+    - family: Frias-Martinez
+      given: Enrique
+  DOI: 10.1109/ICDMW.2016.0192
+  issued:
+    - year: 2016
+      month: 12
+      day: 1
+  note: 'ZSCC: 0000004'
+  page: 1312-1315
+  source: ResearchGate
+  title: >-
+    MobInsight: Understanding Urban Mobility with Crowd-Powered Neighborhood
+    Characterizations
+  title-short: MobInsight
+  type: paper-conference
+
+- id: park2017
+  abstract: >-
+    Collective urban mobility embodies the residents' local insights on the
+    city. Mobility practices of the residents are produced from their spatial
+    choices, which involve various considerations such as the atmosphere of
+    destinations, distance, past experiences, and preferences. The advances in
+    mobile computing and the rise of geo-social platforms have provided the
+    means for capturing the mobility practices; however, interpreting the
+    residents' insights is challenging due to the scale and complexity of an
+    urban environment, and its unique context. In this paper, we present
+    MobInsight, a framework for making localized interpretations of urban
+    mobility that reflect various aspects of the urbanism. MobInsight extracts a
+    rich set of neighborhood features through holistic semantic aggregation, and
+    models the mobility between all-pairs of neighborhoods. We evaluate
+    MobInsight with the mobility data of Barcelona and demonstrate diverse
+    localized and semantically-rich interpretations.
+  accessed:
+    - year: 2021
+      month: 2
+      day: 17
+  author:
+    - family: Park
+      given: Souneil
+    - family: Serra
+      given: Joan
+    - family: Martinez
+      given: Enrique Frias
+    - family: Oliver
+      given: Nuria
+  container-title: arXiv:1709.10299 [cs]
+  issued:
+    - year: 2017
+      month: 9
+      day: 29
+  note: 'ZSCC: NoCitationData[s0]'
+  source: arXiv.org
+  title: >-
+    MobInsight: A Framework Using Semantic Neighborhood Features for Localized
+    Interpretations of Urban Mobility
+  title-short: MobInsight
+  type: article-journal
+  URL: http://arxiv.org/abs/1709.10299
+
+- id: wei2019
+  abstract: >-
+    Objective: This study investigated the relationships between PM2.5 and 5
+    criteria air pollutants (SO2, NO2, PM10, CO, and O3) in Heilongjiang, China,
+    from 2015 to 2018 using global and geographically and temporally weighted
+    regression models. Methods: Ordinary least squares regression (OLS), linear
+    mixed models (LMM), geographically weighted regression (GWR), temporally
+    weighted regression (TWR), and geographically and temporally weighted
+    regression (GTWR) were applied to model the relationships between PM2.5 and
+    5 air pollutants. Results: The LMM and all GWR-based models (i.e., GWR, TWR,
+    and GTWR) showed great advantages over OLS in terms of higher model R2 and
+    more desirable model residuals, especially TWR and GTWR. The GWR, LMM, TWR,
+    and GTWR improved the model explanation power by 3%, 5%, 12%, and 12%,
+    respectively, from the R2 (0.85) of OLS. TWR yielded slightly better model
+    performance than GTWR and reduced the root mean squared errors (RMSE) and
+    mean absolute error (MAE) of the model residuals by 67% compared with OLS;
+    while GWR only reduced RMSE and MAE by 15% against OLS. LMM performed
+    slightly better than GWR by accounting for both temporal autocorrelation
+    between observations over time and spatial heterogeneity across the 13
+    cities under study, which provided an alternative for modeling PM2.5.
+    Conclusions: The traditional OLS and GWR are inadequate for describing the
+    non-stationarity of PM2.5. The temporal dependence was more important and
+    significant than spatial heterogeneity in our data. Our study provided
+    evidence of spatial–temporal heterogeneity and possible solutions for
+    modeling the relationships between PM2.5 and 5 criteria air pollutants for
+    Heilongjiang province, China.
+  author:
+    - family: Wei
+      given: Qingbin
+    - family: Zhang
+      given: Lianjun
+    - family: Duan
+      given: Wenbiao
+    - family: Zhen
+      given: Zhen
+  container-title: International Journal of Environmental Research and Public Health
+  container-title-short: International Journal of Environmental Research and Public Health
+  DOI: 10.3390/ijerph16245107
+  issued:
+    - year: 2019
+      month: 12
+      day: 14
+  note: 'ZSCC: 0000006'
+  page: '5107'
+  source: ResearchGate
+  title: >-
+    Global and Geographically and Temporally Weighted Regression Models for
+    Modeling PM2.5 in Heilongjiang, China from 2015 to 2018
+  type: article-journal
+  URL: 10.3390/ijerph16245107
+  volume: '16'
+...

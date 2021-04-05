@@ -1,3 +1,5 @@
+from constants import MY_AUTHOR_NAME_LIST
+
 """
 Filters for printing TeX to jinja templates.
 See http://flask.pocoo.org/snippets/55/ for more info.
@@ -111,7 +113,7 @@ def author_filter(authors, tex=False):
     """
     Filter author list
     """
-    my_names = ['W. T. Barnes', 'Will T. Barnes']
+    my_names = MY_AUTHOR_NAME_LIST
     bold = '\\underline{{{}}}' if tex else '<strong>{}</strong>'
     return ', '.join([bold.format(a) if a in my_names else a for a in authors])
 

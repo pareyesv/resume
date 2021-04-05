@@ -7,6 +7,8 @@ import jinja2
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 import filters
+from papers_parser import get_updated_journals
+from constants import CV_DATA_YAML, PAPERS_YAML
 
 
 class BuildCV(object):
@@ -14,10 +16,17 @@ class BuildCV(object):
     Build markdown and tex files of CV from YAML using jinja templates
     """
 
-    def __init__(self, yaml_config_file, filters=None, templates=None):
+    def __init__(self, yaml_config_file, papers_yaml_config_file, filters=None,
+                 templates=None):
         self.filters = filters
         with open(yaml_config_file, 'r') as f:
             self.data = yaml.load(f)
+        with open(papers_yaml_config_file, 'r') as fp:
+            self.papers = yaml.load(fp)
+
+        # update papers info from `papers_yaml_config_file`
+        self.data = get_updated_journals(data=self.data, papers=self.papers)
+
         templates = {} if templates is None else templates
         self.loader = jinja2.loaders.DictLoader(templates)
 
@@ -60,19 +69,19 @@ class BuildCV(object):
 
     def tex_cv(self, **kwargs):
         return self.jenv_tex.get_template("cv.tex").render(
-            data=self.data, **kwargs)
+            data=self.data, papers=self.papers, **kwargs)
 
     def tex_short_cv(self, **kwargs):
         return self.jenv_tex.get_template("cv-short.tex").render(
-            data=self.data, **kwargs)
+            data=self.data, papers=self.papers, **kwargs)
 
     def markdown_cv(self, pdf_link=None):
         return self.jenv.get_template("cv.md").render(
-            data=self.data, pdf_link=pdf_link)
+            data=self.data, papers=self.papers, pdf_link=pdf_link)
 
     def html_cv(self, pdf_link=None):
         return self.jenv.get_template("cv.html").render(
-            data=self.data, pdf_link=pdf_link)
+            data=self.data, papers=self.papers, pdf_link=pdf_link)
 
 
 if __name__ == '__main__':
@@ -80,7 +89,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Build TeX and Markdown versions of your CV')
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     parser.add_argument("--cv_data", help="YAML config file containing all CV data",
-                        default=os.path.join(cur_dir, 'cv_data.yml'))
+                        default=os.path.join(cur_dir, CV_DATA_YAML))
+    parser.add_argument("--papers_data", help="YAML config file (Zotero Better CSL YAML format) containing all publications",
+                        default=os.path.join(cur_dir, PAPERS_YAML))
     parser.add_argument("--md_out_file", help="where to write markdown version of CV")
     parser.add_argument("--html_out_file", help="where to write HTML version of CV")
     parser.add_argument("--tex_out_file", help="where to write TeX version of CV")
@@ -103,7 +114,7 @@ if __name__ == '__main__':
         filters.date_range_filter,
         filters.latex_repo_icon_filter,
     ]
-    cv = BuildCV(args.cv_data, filters=filters)
+    cv = BuildCV(args.cv_data, args.papers_data, filters=filters)
     if args.tex_out_file is not None:
         with open(args.tex_out_file, 'w') as f:
             f.write(cv.tex_cv())
