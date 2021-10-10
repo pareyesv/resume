@@ -153,7 +153,7 @@
 ((* set  sect = data.sections | select_by_attr_name("title", "Papers") *))
 \cvsection{((( sect.title )))}
 
-A current publication list is also available from 
+A current publication list is also available from
 \href{https://orcid.org/((( data.preamble.contact.orcid )))}
      {Orcid (ID: ((( data.preamble.contact.orcid ))))}.
 ((* for i in sect.entries *))
@@ -182,7 +182,10 @@ A current publication list is also available from
 ((* set sect = data.sections | select_by_attr_name("title", "Professional Service") *))
 \cvsection{((( sect.title | escape_tex )))}
 
+
+((* if sect.reviewer_for *))
 \textbf{Reviewer for:} ((( sect.reviewer_for | join(',') )))
+((* endif *))
 
 \begin{cventries}
 ((* for i in sect.entries *))
@@ -246,7 +249,7 @@ A current publication list is also available from
 ((* set sect2 = sect.entries | select_by_attr_name("title", "Open Source Contributions") *))
 \cvsubsection{((( sect2.title | escape_tex )))}
 
-A more complete record of my contributions is available on 
+A more complete record of my contributions is available on
 \href{https://github.com/((( data.preamble.contact.github )))}
      {GitHub} and \href{https://gitlab.com/((( data.preamble.contact.gitlab )))}{GitLab}.
 \begin{cventries}
