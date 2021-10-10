@@ -4,11 +4,12 @@ from constants import MY_AUTHOR_NAME_LIST
 Filters for printing TeX to jinja templates.
 See http://flask.pocoo.org/snippets/55/ for more info.
 """
-import re
-import logging
 import calendar
+import logging
+import re
 from urllib.parse import urlparse
 
+import jinja2
 
 LATEX_SUBS = (
     (re.compile(r'\\'), r'\\textbackslash'),
@@ -24,9 +25,11 @@ def escape_tex(value):
     """
     Escape TeX special characters
     """
+    if isinstance(value, jinja2.runtime.Undefined):
+        return ""
     newval = value
     for pattern, replacement in LATEX_SUBS:
-        newval = pattern.sub(replacement, newval)
+        newval = pattern.sub(replacement, str(newval))
     return newval
 
 
